@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kubik — Cube Timer</title>
+<meta name="description" content="Çevrimdışı speedcubing kronometresi. Gerçek WCA karıştırmaları, istatistikler, reklamsız ve izinsiz.">
+<link rel="icon" href="icon.png">
+<style>
+  :root {
+    --bg: #0b0b0d;
+    --surface: #141519;
+    --outline: #2a2d33;
+    --text: #ecedee;
+    --muted: #8a8f98;
+    --accent: #22d3a6;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.6;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 56px 24px 72px; }
+  header { display: flex; align-items: center; gap: 20px; margin-bottom: 8px; }
+  header img { width: 76px; height: 76px; border-radius: 18px; }
+  h1 { font-size: 2.1rem; margin: 0; letter-spacing: -0.02em; }
+  .tag { color: var(--accent); font-size: 1rem; margin: 2px 0 0; }
+  .lead { color: var(--muted); margin: 24px 0 32px; font-size: 1.05rem; }
+  h2 { font-size: 1.15rem; margin: 40px 0 12px; }
+  ul { padding-left: 20px; margin: 0; }
+  li { margin: 8px 0; }
+  li b { color: var(--text); font-weight: 600; }
+  .cta {
+    display: inline-block; margin: 32px 0 0; padding: 12px 22px;
+    background: var(--accent); color: #06110d; font-weight: 600;
+    border-radius: 999px; text-decoration: none;
+  }
+  .note { color: var(--muted); font-size: 0.85rem; margin-top: 12px; }
+  footer {
+    margin-top: 56px; padding-top: 24px; border-top: 1px solid var(--outline);
+    color: var(--muted); font-size: 0.9rem;
+  }
+  a { color: var(--accent); }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-top: 16px; }
+  .card { background: var(--surface); border: 1px solid var(--outline); border-radius: 14px; padding: 16px 18px; }
+  .card h3 { margin: 0 0 6px; font-size: 0.95rem; }
+  .card p { margin: 0; color: var(--muted); font-size: 0.88rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <img src="icon.png" alt="Kubik">
+    <div>
+      <h1>Kubik</h1>
+      <p class="tag">Speedcubing timer</p>
+    </div>
+  </header>
+
+  <p class="lead">
+    Hızlı ve sessiz bir küp kronometresi. Hesap yok, internet yok, reklam yok ve
+    tek bir Android izni bile istemiyor — her şey telefonunuzda çalışır.
+  </p>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Gerçek WCA karıştırmaları</h3>
+      <p>3x3 ve 2x2 için rastgele-durum karıştırma, cihazınızda üretilir. 13 etkinlik desteklenir.</p>
+    </div>
+    <div class="card">
+      <h3>İki parmak Stackmat modu</h3>
+      <p>İki pedi basılı tut, bırakınca başlar, ikisine dokununca durur. Dikeyde ve yatayda.</p>
+    </div>
+    <div class="card">
+      <h3>Kurallara uyan istatistik</h3>
+      <p>ao5, ao12, ao50, ao100 ve mo3 — WCA kırpma kurallarıyla, güncel ve en iyi değerleriyle.</p>
+    </div>
+    <div class="card">
+      <h3>Verileriniz sizde kalır</h3>
+      <p>İnternet izni yok. Yedeği JSON, oturumu CSV olarak dışa aktarabilirsiniz.</p>
+    </div>
+  </div>
+
+  <h2>Öne çıkanlar</h2>
+  <ul>
+    <li><b>WCA inceleme süresi</b> — 15 saniyelik geri sayım, otomatik +2 ve DNF</li>
+    <li><b>Karıştırma önizlemesi</b> — 2x2'den 7x7'ye karışmış küpün görseli</li>
+    <li><b>Sınırsız oturum</b> — her etkinlik için ayrı ayrı</li>
+    <li><b>Elle süre girişi</b> — fiziksel Stackmat kullananlar için</li>
+    <li><b>Koyu, açık ve AMOLED siyah tema</b>, dört vurgu rengi</li>
+    <li><b>Yaklaşık 1 MB</b> kurulu boyut</li>
+  </ul>
+
+  <a class="cta" href="https://play.google.com/store/apps/details?id=com.apeirastudios.kubik">Google Play'de aç</a>
+  <p class="note">Uygulama yayına alındığında bu bağlantı çalışır.</p>
+
+  <footer>
+    <p>
+      <a href="privacy.html">Gizlilik politikası</a> ·
+      <a href="mailto:apeirastudios@gmail.com">apeirastudios@gmail.com</a>
+    </p>
+    <p>Apeira Studios</p>
+  </footer>
+
+</div>
+</body>
+</html>
