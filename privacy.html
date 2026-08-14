@@ -85,9 +85,14 @@ ortaklarının sitelerinde/uygulamalarında bilgi kullanımı</a>.</p>
 </ul>
 
 <h2>İzinler</h2>
-<p>Uygulama yalnızca <code>INTERNET</code> ve <code>ACCESS_NETWORK_STATE</code>
-izinlerini kullanır; bunlar sadece reklamın yüklenmesi içindir. Dosyalarınıza,
-kameranıza, rehberinize, konum servislerinize veya kimliğinize erişim istemez.</p>
+<p>Uygulamanın kendi istediği izinler <code>INTERNET</code> ve
+<code>ACCESS_NETWORK_STATE</code>; ikisi de yalnızca reklamın yüklenmesi içindir.</p>
+<p>Google Mobile Ads SDK'sı bunlara ek olarak şu izinleri ekler:
+<code>AD_ID</code> (reklam kimliği), <code>ACCESS_ADSERVICES_*</code> (Android Privacy
+Sandbox), <code>WAKE_LOCK</code> ve <code>FOREGROUND_SERVICE</code>. Bunlar reklam
+sisteminin çalışması içindir.</p>
+<p>Uygulama <b>hiçbir koşulda</b> dosyalarınıza, kameranıza, mikrofonunuza,
+rehberinize, konum servislerinize (GPS) veya hesap bilgilerinize erişim istemez.</p>
 
 <h2>Verilerinizi dışa aktarma</h2>
 <p>Ayarlar → Veri bölümünden verilerinizi istediğiniz zaman dışa aktarabilirsiniz.
@@ -150,9 +155,13 @@ information from sites or apps that use our services</a>.</p>
 </ul>
 
 <h2>Permissions</h2>
-<p>The app uses only <code>INTERNET</code> and <code>ACCESS_NETWORK_STATE</code>,
-solely to load the ad. It does not request access to your files, camera, contacts,
-location services, or identity.</p>
+<p>The permissions the app itself declares are <code>INTERNET</code> and
+<code>ACCESS_NETWORK_STATE</code>, both solely to load the ad.</p>
+<p>The Google Mobile Ads SDK adds these on top: <code>AD_ID</code> (advertising ID),
+<code>ACCESS_ADSERVICES_*</code> (Android Privacy Sandbox), <code>WAKE_LOCK</code> and
+<code>FOREGROUND_SERVICE</code>. These exist for the advertising system to function.</p>
+<p>The app <b>never</b> requests access to your files, camera, microphone, contacts,
+location services (GPS), or account information.</p>
 
 <h2>Exporting your data</h2>
 <p>You can export your data at any time from Settings → Data. The file is written to
