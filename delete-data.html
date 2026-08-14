@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kubik — Veri Silme / Data Deletion</title>
+<link rel="icon" href="icon.png">
+<style>
+  :root {
+    --bg: #0b0b0d; --outline: #2a2d33; --text: #ecedee;
+    --muted: #8a8f98; --accent: #22d3a6;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.65;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 48px 24px 72px; }
+  h1 { font-size: 1.7rem; margin: 0 0 4px; }
+  h2 { font-size: 1.1rem; margin: 32px 0 8px; }
+  .date { color: var(--muted); font-size: 0.9rem; margin: 0 0 8px; }
+  ol, ul { padding-left: 22px; }
+  li { margin: 8px 0; }
+  a { color: var(--accent); }
+  hr { border: none; border-top: 1px solid var(--outline); margin: 56px 0 40px; }
+  .back { display: inline-block; margin-bottom: 28px; color: var(--accent); text-decoration: none; font-size: 0.9rem; }
+  .lede { background: #141519; border: 1px solid var(--outline); border-radius: 14px; padding: 16px 18px; }
+  table { border-collapse: collapse; width: 100%; margin-top: 8px; font-size: 0.95rem; }
+  th, td { border: 1px solid var(--outline); padding: 8px 10px; text-align: left; vertical-align: top; }
+  th { color: var(--muted); font-weight: 600; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<a class="back" href="index.html">← Kubik</a>
+
+<h1>Verilerinizi silme</h1>
+<p class="date">Kubik · Apeira Studios · <code>com.apeirastudios.kubik</code></p>
+
+<div class="lede">
+  <p>Kubik'in sunucusu yoktur ve hiçbir veriniz bizde tutulmaz. Çözüm süreleriniz
+  yalnızca telefonunuzda durur, dolayısıyla silme işlemini <b>tamamen siz
+  yapabilirsiniz</b> ve bizden onay beklemeniz gerekmez.</p>
+</div>
+
+<h2>1. Uygulama içinden silme</h2>
+<ul>
+  <li>Tek bir çözümü silmek: <b>Süreler</b> sekmesinde çözüme dokunun → <b>Sil</b></li>
+  <li>Bir oturumun tamamını silmek: oturum seçicisi → <b>Çözümleri temizle</b></li>
+  <li>Oturumu tümüyle kaldırmak: oturum seçicisi → <b>Oturumu sil</b></li>
+</ul>
+
+<h2>2. Tüm verileri tek seferde silme</h2>
+<ol>
+  <li><b>Uygulamayı kaldırın.</b> Kubik'in sakladığı her şey (süreler, oturumlar,
+  ayarlar) o anda cihazdan silinir.</li>
+  <li>Ya da uygulamayı kaldırmadan: Android <b>Ayarlar → Uygulamalar → Kubik →
+  Depolama → Verileri temizle</b>.</li>
+</ol>
+<p>Android'in kendi otomatik yedeklemesi açıksa, Google hesabınızda bir yedek kalmış
+olabilir. Bunu Google hesap ayarlarınızdaki yedekleme bölümünden kaldırabilirsiniz;
+bu yedek Google tarafından yönetilir, bizim erişimimiz yoktur.</p>
+
+<h2>3. Reklam verileri</h2>
+<p>Uygulamadaki banner reklamı Google AdMob sunar. Bu veriler bize değil doğrudan
+Google'a gider. Silmek veya sıfırlamak için:</p>
+<ul>
+  <li>Android <b>Ayarlar → Gizlilik → Reklamlar</b> → reklam kimliğini sıfırlayın veya
+  silin</li>
+  <li>Uygulama içinde <b>Ayarlar → Gizlilik → Reklam gizlilik seçenekleri</b>
+  (AB/Birleşik Krallık kullanıcılarında görünür)</li>
+  <li><a href="https://myadcenter.google.com">Google Reklam Merkezi</a> ve
+  <a href="https://policies.google.com/privacy">Google Gizlilik Politikası</a></li>
+</ul>
+
+<h2>Ne siliniyor, ne saklanıyor?</h2>
+<table>
+  <tr><th>Veri</th><th>Nerede tutulur</th><th>Silme</th><th>Saklama süresi</th></tr>
+  <tr>
+    <td>Çözüm süreleri, oturumlar, notlar, ayarlar</td>
+    <td>Yalnızca cihazınızda</td>
+    <td>Yukarıdaki adımlarla anında</td>
+    <td>Siz silene kadar; bizde kopyası yok</td>
+  </tr>
+  <tr>
+    <td>Reklam kimliği ve reklam etkileşimi</td>
+    <td>Google (AdMob)</td>
+    <td>Android ayarlarından sıfırlanır/silinir</td>
+    <td>Google'ın politikasına tabidir</td>
+  </tr>
+  <tr>
+    <td>Hesap bilgisi, e-posta, isim</td>
+    <td>Toplanmaz</td>
+    <td>—</td>
+    <td>—</td>
+  </tr>
+</table>
+
+<h2>Talep göndermek isterseniz</h2>
+<p>Bizde saklanan veriniz olmadığı için silme talebine gerek yoktur; yine de sormak
+veya doğrulama istemek isterseniz
+<a href="mailto:apeirastudios@gmail.com">apeirastudios@gmail.com</a> adresine yazın.
+E-postanıza <b>30 gün içinde</b> yanıt veririz.</p>
+
+<hr>
+
+<h1>Deleting your data</h1>
+<p class="date">Kubik · Apeira Studios · <code>com.apeirastudios.kubik</code></p>
+
+<div class="lede">
+  <p>Kubik has no server and holds none of your data. Your solve times live only on
+  your phone, so <b>you can delete everything yourself</b> — no request or approval
+  from us is needed.</p>
+</div>
+
+<h2>1. Deleting from inside the app</h2>
+<ul>
+  <li>A single solve: <b>Times</b> tab → tap the solve → <b>Delete</b></li>
+  <li>A whole session's solves: session picker → <b>Clear solves</b></li>
+  <li>The session itself: session picker → <b>Delete session</b></li>
+</ul>
+
+<h2>2. Deleting everything at once</h2>
+<ol>
+  <li><b>Uninstall the app.</b> Everything Kubik stores (times, sessions, settings) is
+  removed from the device at that moment.</li>
+  <li>Or without uninstalling: Android <b>Settings → Apps → Kubik → Storage →
+  Clear data</b>.</li>
+</ol>
+<p>If Android's own automatic backup is enabled, a backup may remain in your Google
+account. You can remove it from the backup section of your Google account settings;
+that backup is managed by Google and we have no access to it.</p>
+
+<h2>3. Advertising data</h2>
+<p>The banner ad is served by Google AdMob. That data goes directly to Google, not to
+us. To reset or delete it:</p>
+<ul>
+  <li>Android <b>Settings → Privacy → Ads</b> → reset or delete your advertising ID</li>
+  <li>In the app: <b>Settings → Privacy → Ad privacy options</b> (shown to EEA/UK users)</li>
+  <li><a href="https://myadcenter.google.com">Google My Ad Center</a> and the
+  <a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
+</ul>
+
+<h2>What is deleted, what is retained</h2>
+<table>
+  <tr><th>Data</th><th>Stored where</th><th>Deletion</th><th>Retention</th></tr>
+  <tr>
+    <td>Solve times, sessions, notes, settings</td>
+    <td>Only on your device</td>
+    <td>Immediately, via the steps above</td>
+    <td>Until you delete it; we hold no copy</td>
+  </tr>
+  <tr>
+    <td>Advertising ID and ad interactions</td>
+    <td>Google (AdMob)</td>
+    <td>Reset or deleted in Android settings</td>
+    <td>Governed by Google's policy</td>
+  </tr>
+  <tr>
+    <td>Account details, email, name</td>
+    <td>Not collected</td>
+    <td>—</td>
+    <td>—</td>
+  </tr>
+</table>
+
+<h2>If you want to send a request</h2>
+<p>Since we hold no data of yours, a deletion request is not necessary. If you would
+still like to ask or to have this confirmed, write to
+<a href="mailto:apeirastudios@gmail.com">apeirastudios@gmail.com</a>. We reply within
+<b>30 days</b>.</p>
+
+</div>
+</body>
+</html>
