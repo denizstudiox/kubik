@@ -20,7 +20,6 @@
   h1 { font-size: 1.7rem; margin: 0 0 4px; }
   h2 { font-size: 1.1rem; margin: 32px 0 8px; }
   .date { color: var(--muted); font-size: 0.9rem; margin: 0 0 8px; }
-  p, li { color: var(--text); }
   ul { padding-left: 20px; }
   li { margin: 6px 0; }
   a { color: var(--accent); }
@@ -39,36 +38,64 @@
 
 <h2>Kısaca</h2>
 <div class="lede">
-  <p>Kubik hiçbir veri toplamaz, iletmez veya paylaşmaz. İnternet izni yoktur;
-  bu yüzden teknik olarak hiçbir yere bir şey gönderemez.</p>
+  <p>Kubik'in kendisi hiçbir kişisel veri toplamaz. Süreleriniz yalnızca telefonunuzda
+  saklanır ve hiçbir yere gönderilmez. Uygulamada tek bir banner reklam vardır; bu
+  reklamı Google AdMob sunar ve AdMob reklamları göstermek için cihazınızdan bazı
+  bilgiler toplar.</p>
 </div>
 
-<h2>Uygulamanın sakladıkları</h2>
-<p>Kubik aşağıdakileri <b>yalnızca cihazınızda</b>, uygulamanın özel deposunda saklar:</p>
+<h2>Kubik'in cihazınızda sakladıkları</h2>
+<p>Aşağıdakiler <b>yalnızca cihazınızda</b>, uygulamanın özel deposunda tutulur ve
+hiçbir zaman yüklenmez:</p>
 <ul>
   <li>Çözüm süreleriniz, cezalar (+2 / DNF), karıştırmalar ve notlar</li>
   <li>Oturum adlarınız</li>
   <li>Uygulama ayarlarınız (tema, inceleme süresi, basılı tutma süresi vb.)</li>
 </ul>
-<p>Bu veriler hiçbir zaman yüklenmez. Uygulamayı kaldırdığınızda silinir; Android'in
-kendi yedekleme özelliği açıksa yedek, Google hesabınız altında Google tarafından
-yönetilir — Kubik bu sürece dâhil değildir.</p>
+<p>Bu veriler uygulamayı kaldırdığınızda silinir. Android'in kendi yedekleme özelliği
+açıksa yedek, Google hesabınız altında Google tarafından yönetilir — Kubik bu sürece
+dâhil değildir.</p>
+
+<h2>Reklamlar</h2>
+<p>Uygulamanın Süreler, İstatistik ve Ayarlar ekranlarının altında tek bir banner
+reklam gösterilir. <b>Kronometre ekranında reklam yoktur.</b></p>
+<p>Reklamlar <b>Google AdMob</b> tarafından sunulur. AdMob bu amaçla şunları
+toplayabilir:</p>
+<ul>
+  <li>Reklam kimliği (Android Advertising ID)</li>
+  <li>Cihaz ve uygulama bilgileri (model, işletim sistemi sürümü, dil)</li>
+  <li>IP adresi ve buradan çıkarılan yaklaşık konum</li>
+  <li>Reklamla etkileşiminiz (görüntüleme, tıklama)</li>
+</ul>
+<p>Bu verileri biz toplamayız, göremeyiz ve saklamayız; doğrudan Google'a gider.
+Ayrıntılar için:
+<a href="https://policies.google.com/privacy">Google Gizlilik Politikası</a> ve
+<a href="https://policies.google.com/technologies/partner-sites">Google'ın iş
+ortaklarının sitelerinde/uygulamalarında bilgi kullanımı</a>.</p>
+
+<h2>Rıza ve seçimleriniz</h2>
+<ul>
+  <li><b>Avrupa Ekonomik Alanı ve Birleşik Krallık:</b> uygulamayı ilk açtığınızda bir
+  rıza formu gösterilir. Seçiminizi daha sonra <b>Ayarlar → Gizlilik → Reklam gizlilik
+  seçenekleri</b> bölümünden değiştirebilirsiniz.</li>
+  <li><b>Her yerde:</b> Android ayarlarından reklam kimliğinizi sıfırlayabilir veya
+  tamamen silebilirsiniz (Ayarlar → Gizlilik → Reklamlar).</li>
+  <li>Uçak modunda veya internetsiz kullanırsanız reklam gösterilmez; kronometre,
+  karıştırma üretimi ve istatistikler dâhil uygulamanın tamamı normal çalışır.</li>
+</ul>
 
 <h2>İzinler</h2>
-<p>Kubik <b>hiçbir Android izni</b> talep etmez. İnternete, dosyalarınıza, konumunuza,
-kameranıza, rehberinize veya kimliğinize erişemez.</p>
-
-<h2>Üçüncü taraflar</h2>
-<p>Uygulamada reklam ağı, analitik SDK'sı veya hata raporlama servisi bulunmaz.</p>
+<p>Uygulama yalnızca <code>INTERNET</code> ve <code>ACCESS_NETWORK_STATE</code>
+izinlerini kullanır; bunlar sadece reklamın yüklenmesi içindir. Dosyalarınıza,
+kameranıza, rehberinize, konum servislerinize veya kimliğinize erişim istemez.</p>
 
 <h2>Verilerinizi dışa aktarma</h2>
 <p>Ayarlar → Veri bölümünden verilerinizi istediğiniz zaman dışa aktarabilirsiniz.
-Dosya, Android'in sistem dosya seçicisiyle sizin seçtiğiniz konuma doğrudan yazılır.
-Dosyanın sonrasında nereye gideceği tamamen size bağlıdır.</p>
+Dosya, Android'in sistem dosya seçicisiyle sizin seçtiğiniz konuma yazılır.</p>
 
 <h2>Çocuklar</h2>
-<p>Kubik'te reklam, satın alma veya kullanıcı içeriği yoktur ve veri toplanmaz;
-bu nedenle her yaş için uygundur.</p>
+<p>Kubik 13 yaş ve üzeri kullanıcılara yöneliktir. Uygulama içi satın alma veya
+kullanıcı içeriği yoktur.</p>
 
 <h2>İletişim</h2>
 <p><a href="mailto:apeirastudios@gmail.com">apeirastudios@gmail.com</a></p>
@@ -80,37 +107,60 @@ bu nedenle her yaş için uygundur.</p>
 
 <h2>Short version</h2>
 <div class="lede">
-  <p>Kubik does not collect, transmit, or share any data. It has no internet
-  permission, so it is technically incapable of sending anything anywhere.</p>
+  <p>Kubik itself collects no personal data. Your times are stored only on your phone
+  and are never uploaded. The app shows a single banner ad, served by Google AdMob,
+  and AdMob collects some information from your device in order to serve it.</p>
 </div>
 
-<h2>What the app stores</h2>
-<p>Kubik stores the following <b>only on your device</b>, in the app's private storage:</p>
+<h2>What Kubik stores on your device</h2>
+<p>The following is kept <b>only on your device</b>, in the app's private storage, and
+is never uploaded:</p>
 <ul>
   <li>Your solve times, penalties (+2 / DNF), scrambles, and notes</li>
   <li>Your session names</li>
   <li>Your app settings (theme, inspection, hold time, and so on)</li>
 </ul>
-<p>This data is never uploaded. It is deleted when you uninstall the app, unless you
-have Android's own backup enabled, in which case it is handled by Google's device
-backup under your Google account — Kubik itself is not involved.</p>
+<p>This data is deleted when you uninstall the app. If Android's own backup is enabled,
+the backup is handled by Google under your Google account — Kubik is not involved.</p>
+
+<h2>Advertising</h2>
+<p>A single banner ad is shown at the bottom of the Times, Stats and Settings screens.
+<b>There are no ads on the timer screen.</b></p>
+<p>Ads are served by <b>Google AdMob</b>, which may collect:</p>
+<ul>
+  <li>Advertising ID</li>
+  <li>Device and app information (model, OS version, language)</li>
+  <li>IP address and the approximate location inferred from it</li>
+  <li>Your interaction with the ad (impressions, clicks)</li>
+</ul>
+<p>We do not collect, see, or store this data; it goes directly to Google. See the
+<a href="https://policies.google.com/privacy">Google Privacy Policy</a> and
+<a href="https://policies.google.com/technologies/partner-sites">How Google uses
+information from sites or apps that use our services</a>.</p>
+
+<h2>Consent and your choices</h2>
+<ul>
+  <li><b>European Economic Area and the UK:</b> a consent form is shown the first time
+  you open the app. You can change your choice later under
+  <b>Settings → Privacy → Ad privacy options</b>.</li>
+  <li><b>Everywhere:</b> you can reset or delete your advertising ID in Android
+  settings (Settings → Privacy → Ads).</li>
+  <li>Offline or in aeroplane mode no ads are shown, and the entire app — timing,
+  scramble generation and statistics — keeps working normally.</li>
+</ul>
 
 <h2>Permissions</h2>
-<p>Kubik declares <b>no Android permissions at all</b>. It cannot access the internet,
-your files, your location, your camera, your contacts, or your identity.</p>
-
-<h2>Third parties</h2>
-<p>There are no advertising networks, no analytics SDKs, and no crash reporting
-services in the app.</p>
+<p>The app uses only <code>INTERNET</code> and <code>ACCESS_NETWORK_STATE</code>,
+solely to load the ad. It does not request access to your files, camera, contacts,
+location services, or identity.</p>
 
 <h2>Exporting your data</h2>
-<p>You can export your data at any time from Settings → Data. The file is written
-directly to the location you choose using Android's system file picker. Where that
-file goes afterwards is entirely up to you.</p>
+<p>You can export your data at any time from Settings → Data. The file is written to
+the location you choose using Android's system file picker.</p>
 
 <h2>Children</h2>
-<p>Kubik contains no ads, no purchases, and no user-generated content, and collects
-no data, so it is suitable for all ages.</p>
+<p>Kubik is intended for users aged 13 and over. There are no in-app purchases and no
+user-generated content.</p>
 
 <h2>Contact</h2>
 <p><a href="mailto:apeirastudios@gmail.com">apeirastudios@gmail.com</a></p>
